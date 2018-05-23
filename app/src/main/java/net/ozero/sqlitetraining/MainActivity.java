@@ -54,6 +54,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
 
             case R.id.buttonAdd:
+                contentValues.put(DBHelper.KEY_NAME, name);
+                contentValues.put(DBHelper.KEY_EMAIL, email);
+
+                sqLiteDatabase.insert(DBHelper.TABLE_CONTACTS, null, contentValues);
                 break;
 
             case R.id.buttonRead:
