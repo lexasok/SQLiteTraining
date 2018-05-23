@@ -37,7 +37,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
+        String name = editTextName.getText().toString();
+        String email = editTextEmail.getText().toString();
 
+        switch (v.getId()) {
+
+            case R.id.buttonAdd:
+                break;
+
+            case R.id.buttonRead:
+                break;
+
+            case R.id.buttonClear:
+                break;
+
+        }
 
     }
 }
