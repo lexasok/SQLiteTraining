@@ -21,11 +21,13 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
+        db.execSQL("create table " + TABLE_CONTACTS + "(" + KEY_ID
+        + " integer primary key," + KEY_NAME + " text," + KEY_EMAIL + " text" + ")");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        db.execSQL("drop table if exists " + TABLE_CONTACTS);
+        onCreate(db);
     }
 }
