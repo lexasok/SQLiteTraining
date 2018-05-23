@@ -15,8 +15,8 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String KEY_EMAIL = "email";
 
 
-    public DBHelper(Context context, String name, int version) {
-        super(context, name, null, version);
+    public DBHelper(Context context) {
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override
