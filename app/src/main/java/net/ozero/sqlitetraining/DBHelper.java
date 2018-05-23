@@ -6,13 +6,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "contactDb";
-    private static final String TABLE_CONTACTS = "contacts";
+    public static final int DATABASE_VERSION = 1;
+    public static final String DATABASE_NAME = "contactDb";
+    public static final String TABLE_CONTACTS = "contacts";
 
-    private static final String KEY_ID = "_id";
-    private static final String KEY_NAME = "name";
-    private static final String KEY_EMAIL = "email";
+    public static final String KEY_ID = "_id";
+    public static final String KEY_NAME = "name";
+    public static final String KEY_EMAIL = "email";
 
 
     public DBHelper(Context context) {
