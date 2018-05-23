@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText editTextName;
     private EditText editTextEmail;
 
+    private DBHelper dbHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         editTextName = findViewById(R.id.editTextName);
         editTextEmail = findViewById(R.id.editTextEmail);
+
+        //DB
+        dbHelper = new DBHelper(this);
+
     }
 
 
